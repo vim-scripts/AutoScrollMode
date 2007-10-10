@@ -1,0 +1,54 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2041
+
+Sometimes you just read text inside vim. You spend hours in Normal mode, not doing nothing, just scrolling text and pressing hjkl keys all the time. In such situations this script becomes very useful.
+To enter Auto Scroll Mode, install this script first,
+and than activate it pressing <F21> key from Normal mode (Pause on keyboard)
+To start scrolling text type 'l', for more info read next section.
+
+COMMANDS
+
+ Commands used in Auto Scroll Mode to change how Vim will scroll text
+
+        0-9        : change type of movement to:
+
+        "1"        : character, default
+        "2"        : word
+        "3"        : WORD
+        "4"        : line
+        "5"        : half page
+        "6"        : full page
+        "7"        : full screen
+        "8"        : sentence
+        "9"        : paragraph        see 'paragraphs'
+        "0"        : section        see 'sections'
+
+
+
+ Commands used to change how much time will Vim
+ sleep until the cursor is moved, default: Vim will sleep forever
+ Note: period can be negative, in that case period is changed to
+ positive but direction is switched i.e. up becomes down.
+
+
+        "h"        : decrease sleep period for 1 millisecond
+
+        "l"        : increase sleep period for 1 millisecond
+
+
+        "k"        : divides sleep period for 2
+
+        "j"        : multiplies sleep period for 2
+
+
+        "`"        : set sleep period to zero, default
+
+ other useful commands:
+
+        "r"        : clean and redraw screen
+
+        <Space>    : toggle pause, text stop scrolling
+        <Enter>    : toggle backward/forward movement
+
+        <Esc>      : exit AutoScrollMode, enters Normal Vim mode
+        CTRL-C     : immediately exit in Normal Vim mode
+
